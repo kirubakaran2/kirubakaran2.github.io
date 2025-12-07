@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>kirubakaran2's CTF Writeups</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="terminal-window">
+    <header>
+      <h1><span class="glow">CTF Writeups Terminal</span></h1>
+      <p>by <b>kirubakaran2</b></p>
+      <hr/>
+    </header>
+    <section id="intro">
+      <p>Welcome to my <span class="accent">CTF writeup</span> vault! <span class="blinker">█</span></p>
+      <p>Solve and unlock writeups as you progress.<br>
+      <span class="hint">Click a challenge to view its writeup (more coming soon!)</span></p>
+    </section>
+    <section id="ctf-challenges">
+      <h2>Challenges</h2>
+      <ul class="challenge-list">
+        <li class="challenge unlocked" onclick="showWriteup('pwn101')"><span>pwn101</span></li>
+        <li class="challenge locked"><span>web-mastery</span> <span class="locked-icon">🔒</span></li>
+        <li class="challenge locked"><span>crypto-drip</span> <span class="locked-icon">🔒</span></li>
+        <li class="challenge locked"><span>osint-overlord</span> <span class="locked-icon">🔒</span></li>
+      </ul>
+    </section>
+    <section id="writeup-modal" class="hidden">
+      <div class="writeup-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="writeup-details"></div>
+      </div>
+    </section>
+    <footer>
+      <hr/>
+      <p>Website by <span class="accent">kirubakaran2</span> | Classic CTF Terminal Theme</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

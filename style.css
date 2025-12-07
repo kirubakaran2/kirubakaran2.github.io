@@ -1,0 +1,121 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #111;
+  color: #a3ffb0;
+  font-family: "Fira Mono", "Consolas", monospace;
+  min-height: 100vh;
+}
+
+.terminal-window {
+  margin: 50px auto;
+  max-width: 540px;
+  background: #232323;
+  border: 2px solid #10ff80;
+  border-radius: 8px;
+  padding: 24px 32px 16px 32px;
+  box-shadow: 0 0 48px 4px #10ff8033;
+}
+
+header h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+
+.glow {
+  color: #48ffb1;
+  text-shadow: 0 0 8px #24ff78bf, 0 0 20px #1be15bc0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #36ffad88;
+}
+
+.accent {
+  color: #30ffa4;
+  font-weight: bold;
+}
+.blinker {
+  animation: blink 1s step-start infinite;
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.hint {
+  font-size: 0.95rem;
+  color: #c4ffc2c9;
+}
+section {
+  margin-bottom: 18px;
+}
+.challenge-list {
+  list-style: none;
+  padding: 0;
+}
+.challenge {
+  margin: 8px 0;
+  padding: 12px 18px;
+  background: #151c15;
+  border-left: 4px solid #3cffba;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.16s, color 0.16s;
+  display: flex;
+  align-items: center;
+  font-size: 1.09rem;
+}
+.challenge.unlocked {
+  background: #191f1b;
+  color: #59fdb5;
+}
+.challenge.unlocked:hover {
+  background: #1b3c2a;
+}
+.challenge.locked {
+  background: #181818;
+  color: #a7ceae71;
+  border-left: 4px solid #575a4d;
+  cursor: not-allowed;
+}
+.locked-icon {
+  margin-left: 8px;
+  font-size: 1.15rem;
+}
+#writeup-modal {
+  position: fixed;
+  left: 0; top: 0;
+  width: 100vw; height: 100vh;
+  z-index: 100;
+  background: rgba(0,0,0,0.90);
+  display: flex; align-items: center; justify-content: center;
+}
+.hidden { display: none !important; }
+.writeup-content {
+  background: #232823;
+  border: 3px solid #0fff6c;
+  border-radius: 10px;
+  padding: 30px 34px 30px 34px;
+  color: #acebb7;
+  width: 400px;
+  position: relative;
+  font-size: 1.07rem;
+  box-shadow: 0 0 38px 2px #00ff8360;
+}
+.writeup-content .close {
+  color: #41fd82;
+  font-size: 2rem;
+  position: absolute;
+  right: 18px;
+  top: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+footer {
+  text-align: center;
+  opacity: 0.77;
+  font-size: 0.97rem;
+  letter-spacing: 1px;
+}
