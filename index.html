@@ -3,41 +3,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>kirubakaran2's CTF Writeups</title>
+  <title>Kirubakaran | Security Research & CTF Writeups</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="terminal-window">
     <header>
       <h1><span class="glow">CTF Writeups Terminal</span></h1>
-      <p>by <b>kirubakaran2</b></p>
+      <p>by <b>Kirubakaran N</b></p>
       <hr/>
     </header>
+
     <section id="intro">
-      <p>Welcome to my <span class="accent">CTF writeup</span> vault! <span class="blinker">█</span></p>
-      <p>Solve and unlock writeups as you progress.<br>
-      <span class="hint">Click a challenge to view its writeup (more coming soon!)</span></p>
+      <p>Welcome to my <span class="accent">Security Research & CTF Writeup Vault</span> <span class="blinker">█</span></p>
+
+      <p>
+        I document CTF solutions, vulnerability research, bug bounty findings,
+        CVE analysis, exploitation techniques, and secure coding notes.
+      </p>
+
+      <p class="hint">
+        Click a challenge to view its writeup (more coming soon!)
+      </p>
     </section>
-    <section id="ctf-challenges">
-      <h2>Challenges</h2>
+
+    <!-- Blog Section -->
+    <section id="blogs">
+      <h2>Latest Blogs</h2>
+
       <ul class="challenge-list">
-        <li class="challenge unlocked" onclick="showWriteup('pwn101')"><span>pwn101</span></li>
-        <li class="challenge locked"><span>web-mastery</span> <span class="locked-icon">🔒</span></li>
-        <li class="challenge locked"><span>crypto-drip</span> <span class="locked-icon">🔒</span></li>
-        <li class="challenge locked"><span>osint-overlord</span> <span class="locked-icon">🔒</span></li>
+        <li class="challenge unlocked">
+          <a href="blogs/pwn101.html">📖 pwn101 Writeup</a>
+        </li>
+
+        <li class="challenge locked">
+          <span>📖 SSRF Research</span>
+          <span class="locked-icon">Coming Soon</span>
+        </li>
+
+        <li class="challenge locked">
+          <span>📖 XSS Deep Dive</span>
+          <span class="locked-icon">Coming Soon</span>
+        </li>
+
+        <li class="challenge locked">
+          <span>📖 CVE Analysis</span>
+          <span class="locked-icon">Coming Soon</span>
+        </li>
       </ul>
     </section>
+
+    <!-- CTF Challenges -->
+    <section id="ctf-challenges">
+      <h2>CTF Challenges</h2>
+
+      <ul class="challenge-list">
+        <li class="challenge unlocked" onclick="showWriteup('pwn101')">
+          <span>pwn101</span>
+        </li>
+
+        <li class="challenge locked">
+          <span>web-mastery</span>
+          <span class="locked-icon">🔒</span>
+        </li>
+
+        <li class="challenge locked">
+          <span>crypto-drip</span>
+          <span class="locked-icon">🔒</span>
+        </li>
+
+        <li class="challenge locked">
+          <span>osint-overlord</span>
+          <span class="locked-icon">🔒</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Writeup Modal -->
     <section id="writeup-modal" class="hidden">
       <div class="writeup-content">
         <span class="close" onclick="closeModal()">&times;</span>
         <div id="writeup-details"></div>
       </div>
     </section>
+
+    <!-- Connect -->
+    <section id="connect">
+      <h2>Connect</h2>
+
+      <p>
+        🔗 GitHub:
+        <a href="https://github.com/kirubakaran2" target="_blank">
+          github.com/kirubakaran2
+        </a>
+      </p>
+
+      <p>
+        💼 LinkedIn:
+        <a href="https://www.linkedin.com/in/kirubakarann/" target="_blank">
+          linkedin.com/in/kirubakarann
+        </a>
+      </p>
+    </section>
+
     <footer>
       <hr/>
-      <p>Website by <span class="accent">kirubakaran2</span> | Classic CTF Terminal Theme</p>
+
+      <p>
+        Built by <span class="accent">Kirubakaran N</span> |
+        Security Research • Bug Bounty • CVEs • CTF Writeups
+      </p>
     </footer>
+
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
